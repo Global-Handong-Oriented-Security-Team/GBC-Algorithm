@@ -13,14 +13,14 @@ using namespace std ;
 int N, M, V; 
 vector<int> graph[10001] ;
 bool visited[10001] ; 
-void DFS(int start) { 
+void DFS(int start) { // DFS(1) -> DFS(2) -> DFS(4) -> DFS(3) 
     if ( visited[start] ) return ; 
     
     visited[start] = true ; 
     cout << start << ' '; 
 
     for (int i = 0 ; i < graph[start].size(); i++) { 
-        int next_node = graph[start][i] ; 
+        int next_node = graph[start][i] ; // 4 -> 3
         if ( !visited[next_node] ) {
             DFS(next_node) ;  
         }
