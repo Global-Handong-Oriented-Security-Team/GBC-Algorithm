@@ -9,6 +9,11 @@
         "vector": "cpp",
         "__tree": "cpp",
         "__split_buffer": "cpp",
-        "__locale": "cpp"
+        "__locale": "cpp",
+        "memory": "cpp",
+        "utility": "cpp",
+        "algorithm": "cpp",
+        "random": "cpp",
+        "__functional_03": "cpp"
     }
 }
